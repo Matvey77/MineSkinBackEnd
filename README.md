@@ -1,8 +1,8 @@
 # MineSkinBackEnd
 
 ### СТРУКТУРА ПРОЕКТА
-fastapi-project
-├── migrations/
+-- fastapi-project
+-- ├── migrations/
 ├── src
 │   ├── "приложение"
 │   │   ├── router.py
