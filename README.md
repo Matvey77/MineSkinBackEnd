@@ -21,6 +21,9 @@ fastapi-project
 │   │   ├── router.py
 │   │   ├── schemas.py  # pydantic models
 │   │   ├── models.py  # db models
+│   ├── "config"
+│   ├── "database"
+│   ├── "main"
 ├── .env
 ├── .gitignore
 └── alembic.ini
