@@ -5,12 +5,12 @@ from alembic import context
 import os
 import sys
 
-# Добавляем путь к src, чтобы импортировать модели
+# Добавить путь к src, чтобы импортировать модели
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
 
-from database import Base  # Импортируем базу данных из вашего проекта
+from database import Base  # БД
 
-# Импортируйте ваши модели здесь, чтобы Alembic знал о них
+# Импорт моделей
 from news.models import News
 
 config = context.config
