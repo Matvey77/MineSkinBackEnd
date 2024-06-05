@@ -46,6 +46,7 @@ fastapi-project
 │ │ ├── v1.
 │ │ │ ├── api.py # Главный файл для регистрации маршрутов.
 │ │ │ ├── question_answer.py # Маршруты question-answer.
+│ │ │ ├── auth.py # Маршруты registration.
 │ │ │ ├── registration.py # Маршруты registration.
 │ │ │ ├── news.py # Маршруты news.
 │ │ │ ├── skins_catalog.py # Маршруты skins-catalog.
