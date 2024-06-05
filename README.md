@@ -35,44 +35,44 @@ fastapi-project
 ## Структура проекта
 
 fastapi-project
-├── migrations/
-├── src
-│ ├── core
-│ │ ├── config.py # Настройки проекта
-│ │ ├── database.py # Подключение к БД
-│ │ ├── security.py # Безопасность (например, JWT)
-│ ├── api
-│ │ ├── deps.py # Зависимости API
-│ │ ├── v1
-│ │ │ ├── api.py # Главный файл для регистрации маршрутов
-│ │ │ ├── question_answer.py # Маршруты question-answer
-│ │ │ ├── registration.py # Маршруты registration
-│ │ │ ├── news.py # Маршруты news
-│ │ │ ├── skins_catalog.py # Маршруты skins-catalog
-│ ├── question_answer
-│ │ ├── models.py # Модели БД
-│ │ ├── schemas.py # Pydantic модели
-│ │ ├── repository.py # Логика работы с БД
-│ │ ├── services.py # Бизнес-логика
-│ ├── registration
-│ │ ├── models.py # Модели БД
-│ │ ├── schemas.py # Pydantic модели
-│ │ ├── repository.py # Логика работы с БД
-│ │ ├── services.py # Бизнес-логика
-│ ├── news
-│ │ ├── models.py # Модели БД
-│ │ ├── schemas.py # Pydantic модели
-│ │ ├── repository.py # Логика работы с БД
-│ │ ├── services.py # Бизнес-логика
-│ ├── skins_catalog
-│ │ ├── models.py # Модели БД
-│ │ ├── schemas.py # Pydantic модели
-│ │ ├── repository.py # Логика работы с БД
-│ │ ├── services.py # Бизнес-логика
-│ ├── main.py # Точка входа
-├── .env
-├── .gitignore
-└── alembic.ini
+├── migrations/.
+├── src.
+│ ├── core.
+│ │ ├── config.py # Настройки проекта.
+│ │ ├── database.py # Подключение к БД.
+│ │ ├── security.py # Безопасность (например, JWT).
+│ ├── api.
+│ │ ├── deps.py # Зависимости API.
+│ │ ├── v1.
+│ │ │ ├── api.py # Главный файл для регистрации маршрутов.
+│ │ │ ├── question_answer.py # Маршруты question-answer.
+│ │ │ ├── registration.py # Маршруты registration.
+│ │ │ ├── news.py # Маршруты news.
+│ │ │ ├── skins_catalog.py # Маршруты skins-catalog.
+│ ├── question_answer.
+│ │ ├── models.py # Модели БД.
+│ │ ├── schemas.py # Pydantic модели.
+│ │ ├── repository.py # Логика работы с БД.
+│ │ ├── services.py # Бизнес-логика.
+│ ├── registration.
+│ │ ├── models.py # Модели БД.
+│ │ ├── schemas.py # Pydantic модели.
+│ │ ├── repository.py # Логика работы с БД.
+│ │ ├── services.py # Бизнес-логика.
+│ ├── news.
+│ │ ├── models.py # Модели БД.
+│ │ ├── schemas.py # Pydantic модели.
+│ │ ├── repository.py # Логика работы с БД.
+│ │ ├── services.py # Бизнес-логика.
+│ ├── skins_catalog.
+│ │ ├── models.py # Модели БД.
+│ │ ├── schemas.py # Pydantic модели.
+│ │ ├── repository.py # Логика работы с БД.
+│ │ ├── services.py # Бизнес-логика.
+│ ├── main.py # Точка входа.
+├── .env.
+├── .gitignore.
+└── alembic.ini.
 
 
 ### Описание директорий
