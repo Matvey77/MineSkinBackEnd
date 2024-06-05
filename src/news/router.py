@@ -4,7 +4,7 @@ from sqlalchemy.future import select
 from sqlalchemy.orm import joinedload
 from database import get_async_session
 from news import models, schemas
-
+# from auth import get_current_active_user, get_current_active_admin
 router = APIRouter()
 
 # Получение всех новостей
