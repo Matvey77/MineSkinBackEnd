@@ -49,4 +49,5 @@ else:
     run_migrations_online()
 
 # alembic revision --autogenerate -m "Initial migration"
+# alembic revision --autogenerate -m "Add tags and news_tags tables"
 # alembic upgrade head
