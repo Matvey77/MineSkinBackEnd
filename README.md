@@ -35,7 +35,7 @@ fastapi-project
 ## Структура проекта
 
 fastapi-project
-├── migrations/.
+├── migrations/
 ├── src.
 │ ├── core.
 │ │ ├── config.py # Настройки проекта.
