@@ -1,7 +1,7 @@
 # MineSkinBackEnd
 
 ### СТРУКТУРА ПРОЕКТА
-/*
+
 fastapi-project
 ├── migrations/
 ├── src
@@ -12,4 +12,4 @@ fastapi-project
 ├── .env
 ├── .gitignore
 └── alembic.ini
-*/
+
