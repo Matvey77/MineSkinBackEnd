@@ -7,20 +7,23 @@ fastapi-project
 ├── src
 │   ├── "вопрос-ответ"
 │   │   ├── router.py
-│   │   ├── schemas.py  # pydantic models
+│   │   ├── schemas.py 
 │   │   ├── models.py  # db models
 │   ├── "регистрация"
 │   │   ├── router.py
-│   │   ├── schemas.py  # pydantic models
+│   │   ├── schemas.py  
 │   │   ├── models.py  # db models
 │   ├── "новости"
 │   │   ├── router.py
-│   │   ├── schemas.py  # pydantic models
+│   │   ├── schemas.py 
 │   │   ├── models.py  # db models
 │   ├── "каталог-скинов"
 │   │   ├── router.py
-│   │   ├── schemas.py  # pydantic models
+│   │   ├── schemas.py 
 │   │   ├── models.py  # db models
+│   ├── "config"
+│   ├── "database"
+│   ├── "main"
 ├── .env
 ├── .gitignore
 └── alembic.ini
