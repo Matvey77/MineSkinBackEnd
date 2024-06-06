@@ -1,16 +1,16 @@
-from sqlalchemy import Column, Integer, String, Boolean, ForeignKey, Table, MetaData
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from sqlalchemy import Column, Integer, String, Boolean, ForeignKey
 from sqlalchemy.orm import relationship
-from src.database import Base
+from database import Base
 
-metadata = MetaData()
-
-role = Table(
-    "role",
-    metadata,
-    Column("id", Integer, primary_key=True),
-    Column("name", String, unique=True, index=True, nullable=False),
-    Column("permissions", String),
-)
+class Role(Base):
+    __tablename__ = "role"
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, unique=True, index=True, nullable=False)
+    permissions = Column(String)
 
 class User(Base):
     __tablename__ = "user"
@@ -23,4 +23,3 @@ class User(Base):
     is_verified = Column(Boolean, default=False)
     role_id = Column(Integer, ForeignKey("role.id"))
     role = relationship("Role")
-

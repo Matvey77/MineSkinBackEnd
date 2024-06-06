@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from fastapi import FastAPI
 from auth.base_config import auth_backend, fastapi_users, current_active_user, current_superuser
 from auth.schemas import UserRead, UserCreate, UserUpdate
