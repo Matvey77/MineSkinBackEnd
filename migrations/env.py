@@ -1,3 +1,4 @@
+
 import os
 import sys
 from logging.config import fileConfig
@@ -22,7 +23,14 @@ config.set_section_option(section, "DB_USER", DB_USER)
 config.set_section_option(section, "DB_NAME", DB_NAME)
 config.set_section_option(section, "DB_PASS", DB_PASS)
 
-# Interpret the config file for Python logging.
+
+from database import Base  # БД
+
+# Импорт моделей
+from news.models import News
+
+config = context.config
+
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
@@ -35,6 +43,7 @@ def run_migrations_offline() -> None:
         target_metadata=target_metadata,
         literal_binds=True,
         dialect_opts={"paramstyle": "named"},
+        url=url, target_metadata=target_metadata, literal_binds=True, dialect_opts={"paramstyle": "named"}
     )
 
     with context.begin_transaction():
@@ -60,8 +69,16 @@ async def run_migrations_online() -> None:
 
     await connectable.dispose()
 
+
 if context.is_offline_mode():
     run_migrations_offline()
 else:
     import asyncio
     asyncio.run(run_migrations_online())
+
+    run_migrations_online()
+
+# alembic revision --autogenerate -m "Initial migration"
+# alembic revision --autogenerate -m "Add tags and news_tags tables"
+# alembic upgrade head
+
